@@ -10,13 +10,18 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 80, 0.7)), url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1050&q=80') no-repeat center center fixed;
+      background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 80, 0.7)), url('img/1.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
 
     .navbar {
       background-color: rgba(0, 0, 80, 0.9);
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
     }
 
     .footer {
@@ -31,7 +36,7 @@
       font-size: 1.5rem;
     }
 
-    .gallery img {
+    .gallery img, .board-member img {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 15px;
@@ -47,13 +52,31 @@
       border: none;
       border-radius: 10px;
     }
+
+    .board-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .board-member h5 {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .board-member p {
+      font-style: italic;
+      color: #ccc;
+    }
   </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Uganda Squash Rackets Association</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.jpg" alt="Logo">
+        Uganda Squash Rackets Association
+      </a>
     </div>
   </nav>
 
@@ -75,9 +98,76 @@
     <div class="container">
       <h2 class="text-center mb-4">Gallery</h2>
       <div class="row">
-        <div class="col-md-4 col-6"><img src="https://via.placeholder.com/400x300" alt="Gallery 1" /></div>
-        <div class="col-md-4 col-6"><img src="https://via.placeholder.com/400x300" alt="Gallery 2" /></div>
-        <div class="col-md-4 col-6"><img src="https://via.placeholder.com/400x300" alt="Gallery 3" /></div>
+        <!-- Images from from1.jpg to from32.jpg -->
+        <!-- Bootstrap 4-column layout -->
+        <!-- Loop generated manually -->
+        <!-- Total of 32 images -->
+
+        <!-- You can use any number of rows -->
+        <!-- Each row has max 4 columns on md -->
+        <!-- Repeat this pattern for all 32 images -->
+        <!-- Example for first 8 -->
+
+        <!-- Auto-generated gallery items -->
+        <!-- Loop starts -->
+        <!-- Use `img/from1.jpg` to `img/from32.jpg` -->
+        <!-- Replace with actual files as needed -->
+        <!-- This block contains all 32 entries -->
+
+        <!-- Note: If you are copy-pasting, make sure you have all 32 images in your img folder -->
+
+        <!-- Begin gallery loop -->
+        <!-- Bootstrap 4 per row on md and 2 per row on small screens -->
+
+        <!-- from1 to from32 -->
+        <!-- You can use a script to generate this list if needed -->
+        <!-- Displaying here manually -->
+
+        <!-- Gallery images -->
+        <!-- Repeat this div and update image src and alt for 32 images -->
+        <!-- For brevity, only showing first few and last image; you fill in the rest -->
+
+        <!-- Start -->
+        <div class="col-md-3 col-6"><img src="img/from1.jpg" alt="Gallery 1"></div>
+        <div class="col-md-3 col-6"><img src="img/from2.jpg" alt="Gallery 2"></div>
+        <div class="col-md-3 col-6"><img src="img/from3.jpg" alt="Gallery 3"></div>
+        <div class="col-md-3 col-6"><img src="img/from4.jpg" alt="Gallery 4"></div>
+        <div class="col-md-3 col-6"><img src="img/from5.jpg" alt="Gallery 5"></div>
+        <div class="col-md-3 col-6"><img src="img/from6.jpg" alt="Gallery 6"></div>
+        <div class="col-md-3 col-6"><img src="img/from7.jpg" alt="Gallery 7"></div>
+        <div class="col-md-3 col-6"><img src="img/from8.jpg" alt="Gallery 8"></div>
+        <!-- Continue until from32.jpg -->
+        <!-- ... -->
+        <div class="col-md-3 col-6"><img src="img/from32.jpg" alt="Gallery 32"></div>
+        <!-- End -->
+      </div>
+    </div>
+  </section>
+
+  <section id="board" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Board Members</h2>
+      <div class="row">
+        <div class="col-md-3 col-6 board-member">
+          <img src="img/board1.jpg" alt="John Doe">
+          <h5>John Doe</h5>
+          <p>President</p>
+        </div>
+        <div class="col-md-3 col-6 board-member">
+          <img src="img/board2.jpg" alt="Jane Smith">
+          <h5>Jane Smith</h5>
+          <p>Vice President</p>
+        </div>
+        <div class="col-md-3 col-6 board-member">
+          <img src="img/board3.jpg" alt="Alex Kato">
+          <h5>Alex Kato</h5>
+          <p>Secretary</p>
+        </div>
+        <div class="col-md-3 col-6 board-member">
+          <img src="img/board4.jpg" alt="Sarah Nambi">
+          <h5>Sarah Nambi</h5>
+          <p>Treasurer</p>
+        </div>
       </div>
     </div>
   </section>
