@@ -1,276 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uganda Squash Rackets Association</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 80, 0.7)), url('img/1.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uganda Squash Rackets Association</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 80, 0.7)), url('img/1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
 
-    .navbar {
-      background-color: rgba(0, 0, 80, 0.9);
-    }
+    .navbar {
+      background-color: rgba(0, 0, 80, 0.9);
+    }
 
-    .navbar-brand img {
-      height: 50px;
-      width: auto;
-      margin-right: 10px;
-    }
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+      margin-right: 10px;
+    }
 
-    .footer {
-      background-color: rgba(0, 0, 50, 0.9);
-      padding: 20px 0;
-      color: #ddd;
-    }
+    .footer {
+      background-color: rgba(0, 0, 50, 0.9);
+      padding: 20px 0;
+      color: #ddd;
+    }
 
-    section {
-      padding: 50px 15px;
-    }
+    section {
+      padding: 50px 15px;
+    }
 
-    .icon-links a {
-      font-size: 2rem;
-      margin: 0 12px;
-      transition: color 0.3s ease;
-    }
+    .icon-links a {
+      font-size: 2rem;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
 
-    .icon-links a[href*="whatsapp"] {
-      color: #25D366; /* WhatsApp Green */
-    }
+    .icon-links a[href*="whatsapp"] {
+      color: #25D366;
+    }
 
-    .icon-links a[href*="youtube"] {
-      color: #FF0000; /* YouTube Red */
-    }
+    .icon-links a[href*="youtube"] {
+      color: #FF0000;
+    }
 
-    .icon-links a[href*="facebook"] {
-      color: #1877F2; /* Facebook Blue */
-    }
+    .icon-links a[href*="facebook"] {
+      color: #1877F2;
+    }
 
-    .icon-links a:hover {
-      opacity: 0.7;
-    }
+    .icon-links a:hover {
+      opacity: 0.7;
+    }
 
-    /* Gallery & Board image consistency */
-    .board-member img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    }
+    .board-member img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
 
-    .map-container iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
 
-    .board-member {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+    .board-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-    .board-member h5 {
-      margin-top: 10px;
-      font-weight: bold;
-    }
+    .board-member h5 {
+      margin-top: 10px;
+      font-weight: bold;
+    }
 
-    .board-member p {
-      font-style: italic;
-      color: #ccc;
-    }
+    .board-member p {
+      font-style: italic;
+      color: #ccc;
+    }
 
-    /* Gallery: Uniform grid layout */
-    #gallery .row {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-    }
+    #gallery .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
 
-    #gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
+    #gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
 
-    #gallery img:hover {
-      transform: scale(1.05);
-    }
-  </style>
+    #gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Athlete section fix */
+    #athletes img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    #athletes img:hover {
+      transform: scale(1.05);
+    }
+
+    .email-icon {
+      color: #ffcc00;
+      margin-right: 5px;
+    }
+
+    .phone-icon {
+      color: #00ffcc;
+      margin-right: 5px;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="img/logo.jpg">
-        Uganda Squash Rackets Association
-      </a>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.jpg">
+        Uganda Squash Rackets Association
+      </a>
+    </div>
+  </nav>
 
-  <!-- Welcome -->
-  <header class="text-center py-5">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Welcome to Uganda Squash Rackets Association</h1>
-      <p class="lead">Promoting Squash Sport Across Uganda</p>
-    </div>
-  </header>
+  <header class="text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to Uganda Squash Rackets Association</h1>
+      <p class="lead">Promoting Squash Sport Across Uganda</p>
+    </div>
+  </header>
 
-  <!-- About -->
-  <section id="about" class="bg-dark bg-opacity-50 rounded">
-    <div class="container">
-      <h2 class="text-center mb-4">About Us</h2>
-      <p>The Uganda Squash Rackets Association (USRA) is dedicated to the growth and development of squash across Uganda. We support athletes, host tournaments, and offer youth engagement programs that spread the love of the sport nationwide.</p>
-    </div>
-  </section>
-   <section id="mission" class="bg-dark bg-opacity-50 rounded">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Mission</h2>
-    <p>To promote and develop squash across Uganda by providing training, organizing competitive events, and fostering community participation for all ages and skill levels.</p>
-  </div>
-</section>
+  <section id="about" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p>The Uganda Squash Rackets Association (USRA) is dedicated to the growth and development of squash across Uganda. We support athletes, host tournaments, and offer youth engagement programs that spread the love of the sport nationwide.</p>
+    </div>
+  </section>
 
-<section id="programs" class="bg-dark bg-opacity-50 rounded">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Programs</h2>
-    <ul>
-      <li><strong>Youth Development:</strong> Training and mentoring young athletes to excel in squash.</li>
-      <li><strong>Competitive Tournaments:</strong> Hosting national and regional championships.</li>
-      <li><strong>Community Outreach:</strong> Promoting squash in schools and local communities.</li>
-      <li><strong>Coaching Clinics:</strong> Providing professional coaching and workshops.</li>
-    </ul>
-  </div>
-</section>
+  <section id="mission" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Mission</h2>
+      <p>To promote and develop squash across Uganda by providing training, organizing competitive events, and fostering community participation for all ages and skill levels.</p>
+    </div>
+  </section>
 
+  <section id="programs" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Programs</h2>
+      <ul>
+        <li><strong>Youth Development:</strong> Training and mentoring young athletes to excel in squash.</li>
+        <li><strong>Competitive Tournaments:</strong> Hosting national and regional championships.</li>
+        <li><strong>Community Outreach:</strong> Promoting squash in schools and local communities.</li>
+        <li><strong>Coaching Clinics:</strong> Providing professional coaching and workshops.</li>
+      </ul>
+    </div>
+  </section>
 
-  <!-- Board Members -->
-  <section id="board" class="bg-dark bg-opacity-50 rounded">
-    <div class="container">
-      <h2 class="text-center mb-4">Board Members</h2>
-      <div class="row">
-        <div class="col-md-3 col-6 board-member">
-          <img src="img/29.jpg" alt="John Doe" />
-          <h5>John Doe</h5>
-          <p>President</p>
-        </div>
-        <div class="col-md-3 col-6 board-member">
-          <img src="img/30.jpg" alt="Jane Smith" />
-          <h5>Jane Smith</h5>
-          <p>Vice President</p>
-        </div>
-        <div class="col-md-3 col-6 board-member">
-          <img src="img/32.jpg" alt="Alex Kato" />
-          <h5>Alex Kato</h5>
-          <p>Secretary</p>
-        </div>
-        <div class="col-md-3 col-6 board-member">
-          <img src="img/31.jpg" alt="Sarah Nambi" />
-          <h5>Sarah Nambi</h5>
-          <p>Treasurer</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="board" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Board Members</h2>
+      <div class="row">
+        <div class="col-md-3 col-6 board-member"><img src="img/29.jpg" alt="John Doe" /><h5>Isa Bbale Sseremba</h5><p>Vice President</p></div>
+        <div class="col-md-3 col-6 board-member"><img src="img/30.jpg" alt="Jane Smith" /><h5>Nantambi Shifah</h5><p>General Secretary</p></div>
+        <div class="col-md-3 col-6 board-member"><img src="img/32.jpg" alt="Alex Kato" /><h5>Herbert Kafrika</h5><p>Executive Committee</p></div>
+        <div class="col-md-3 col-6 board-member"><img src="img/31.jpg" alt="Sarah Nambi" /><h5>Lynette Kabahenda</h5><p>Committee Member</p></div>
+      </div>
+    </div>
+  </section>
 
- <!-- Gallery -->
-<section id="gallery" class="bg-dark bg-opacity-50 rounded">
-  <div class="container">
-    <h2 class="text-center mb-4">Gallery</h2>
-    <div class="row">
-      <!-- Images from 1 to 11 and 26 (excluding 12 to 25, 27, 28) -->
-      <div><img src="img/1.jpg" alt="Gallery 1" /></div>
-      <div><img src="img/2.jpg" alt="Gallery 2" /></div>
-      <div><img src="img/3.jpg" alt="Gallery 3" /></div>
-      <div><img src="img/4.jpg" alt="Gallery 4" /></div>
-      <div><img src="img/5.jpg" alt="Gallery 5" /></div>
-      <div><img src="img/6.jpg" alt="Gallery 6" /></div>
-      <div><img src="img/7.jpg" alt="Gallery 7" /></div>
-      <div><img src="img/8.jpg" alt="Gallery 8" /></div>
-      <div><img src="img/9.jpg" alt="Gallery 9" /></div>
-      <div><img src="img/10.jpg" alt="Gallery 10" /></div>
-      <div><img src="img/11.jpg" alt="Gallery 11" /></div>
-      <div><img src="img/26.jpg" alt="Gallery 26" /></div>
-    </div>
-  </div>
-</section>
+  <section id="gallery" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row">
+        <div><img src="img/1.jpg" alt="Gallery 1" /></div>
+        <div><img src="img/2.jpg" alt="Gallery 2" /></div>
+        <div><img src="img/3.jpg" alt="Gallery 3" /></div>
+        <div><img src="img/4.jpg" alt="Gallery 4" /></div>
+        <div><img src="img/5.jpg" alt="Gallery 5" /></div>
+        <div><img src="img/6.jpg" alt="Gallery 6" /></div>
+        <div><img src="img/7.jpg" alt="Gallery 7" /></div>
+        <div><img src="img/8.jpg" alt="Gallery 8" /></div>
+        <div><img src="img/9.jpg" alt="Gallery 9" /></div>
+        <div><img src="img/10.jpg" alt="Gallery 10" /></div>
+        <div><img src="img/11.jpg" alt="Gallery 11" /></div>
+        <div><img src="img/26.jpg" alt="Gallery 26" /></div>
+      </div>
+    </div>
+  </section>
 
-<!-- Athletes -->
-<section id="gallery" class="bg-dark bg-opacity-50 rounded">
-  <div class="container">
-    <h2 class="text-center mb-4">Athletes</h2>
-    <div class="row">
-      <!-- Images from 12 to 28 -->
-      <div><img src="img/12.jpg" alt="Athlete 12" /></div>
-      <div><img src="img/13.jpg" alt="Athlete 13" /></div>
-      <div><img src="img/14.jpg" alt="Athlete 14" /></div>
-      <div><img src="img/15.jpg" alt="Athlete 15" /></div>
-      <div><img src="img/16.jpg" alt="Athlete 16" /></div>
-      <div><img src="img/17.jpg" alt="Athlete 17" /></div>
-      <div><img src="img/18.jpg" alt="Athlete 18" /></div>
-      <div><img src="img/19.jpg" alt="Athlete 19" /></div>
-      <div><img src="img/20.jpg" alt="Athlete 20" /></div>
-      <div><img src="img/21.jpg" alt="Athlete 21" /></div>
-      <div><img src="img/22.jpg" alt="Athlete 22" /></div>
-      <div><img src="img/23.jpg" alt="Athlete 23" /></div>
-      <div><img src="img/24.jpg" alt="Athlete 24" /></div>
-      <div><img src="img/25.jpg" alt="Athlete 25" /></div>
-      <div><img src="img/27.jpg" alt="Athlete 27" /></div>
-      <div><img src="img/28.jpg" alt="Athlete 28" /></div>
-    </div>
-  </div>
-</section>
+  <section id="athletes" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Athletes</h2>
+      <div class="row">
+        <div><img src="img/12.jpg" alt="Athlete 12" /></div>
+        <div><img src="img/13.jpg" alt="Athlete 13" /></div>
+        <div><img src="img/14.jpg" alt="Athlete 14" /></div>
+        <div><img src="img/15.jpg" alt="Athlete 15" /></div>
+        <div><img src="img/16.jpg" alt="Athlete 16" /></div>
+        <div><img src="img/17.jpg" alt="Athlete 17" /></div>
+        <div><img src="img/18.jpg" alt="Athlete 18" /></div>
+        <div><img src="img/19.jpg" alt="Athlete 19" /></div>
+        <div><img src="img/20.jpg" alt="Athlete 20" /></div>
+        <div><img src="img/21.jpg" alt="Athlete 21" /></div>
+        <div><img src="img/22.jpg" alt="Athlete 22" /></div>
+        <div><img src="img/23.jpg" alt="Athlete 23" /></div>
+        <div><img src="img/24.jpg" alt="Athlete 24" /></div>
+        <div><img src="img/25.jpg" alt="Athlete 25" /></div>
+        <div><img src="img/27.jpg" alt="Athlete 27" /></div>
+        <div><img src="img/28.jpg" alt="Athlete 28" /></div>
+      </div>
+    </div>
+  </section>
 
+  <section id="location" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Location</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 
-  <!-- Location -->
-  <section id="location" class="bg-dark bg-opacity-50 rounded">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Location</h2>
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.460832836739!2d32.582520416062905!3d0.34759687811704796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb1a77d37829%3A0x35af09bc1262b038!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1635840176752!5m2!1sen!2sug" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
+  <section id="contact" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center">
+        <i class="fas fa-phone phone-icon"></i><a href="tel:+256701785963" style="color:#fff; text-decoration:none;">+256 701785963</a><br>
+        <i class="fas fa-envelope email-icon"></i><a href="mailto:ugandasquashracketsassociation@gmail.com" style="color:#fff;">ugandasquashracketsassociation@gmail.com</a><br>
+        <i class="fas fa-envelope email-icon"></i><a href="mailto:shifrahheardz4@gmail.com" style="color:#fff;">shifrahheardz4@gmail.com</a>
+      </p>
+      <div class="text-center icon-links">
+        <a href="https://wa.me/256701785963" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@ugandasquashracketsassociation" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100063543909448" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-dark bg-opacity-50 rounded">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
-      <p class="text-center">
-        <i class="fas fa-phone"></i> +256 000 000000<br />
-        <i class="fas fa-envelope"></i> ugandasquashracketsassociation@gmail.com<br />
-        <i class="fas fa-envelope"></i> shifrahheardz4@gmail.com
-      </p>
-      <div class="text-center icon-links">
-        <a href="https://whatsapp.com/channel/0029Vb2VMVd9cDDieGLsgW1k" target="_blank" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.youtube.com/@ugandasquashracketsassociation" target="_blank" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100063543909448" target="_blank" aria-label="Facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 Uganda Squash Rackets Association. All rights reserved.</p>
+    </div>
+  </footer>
 
-  <footer class="footer text-center">
-    <div class="container">
-      <p>&copy; 2025 Uganda Squash Rackets Association. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
