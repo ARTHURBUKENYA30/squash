@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
     body {
+      display: flex;
+      flex-direction: column;
       font-family: Arial, sans-serif;
       background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 80, 0.7)), url('img/18.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -21,8 +27,15 @@
 
     .navbar-brand img {
       height: 50px;
-      width: auto;
       margin-right: 10px;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    header {
+      padding-top: 50px;
     }
 
     .footer {
@@ -31,120 +44,53 @@
       color: #ddd;
     }
 
-    section {
-      padding: 50px 15px;
+    .nav-link {
+      color: #fff !important;
     }
 
-    .icon-links a {
-      font-size: 2rem;
-      margin: 0 12px;
-      transition: color 0.3s ease;
-    }
-
-    .icon-links a[href*="whatsapp"] {
-      color: #25D366; /* WhatsApp Green */
-    }
-
-    .icon-links a[href*="youtube"] {
-      color: #FF0000; /* YouTube Red */
-    }
-
-    .icon-links a[href*="facebook"] {
-      color: #1877F2; /* Facebook Blue */
-    }
-
-    .icon-links a:hover {
-      opacity: 0.7;
-    }
-
-    /* Gallery & Board image consistency */
-    .board-member img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-    }
-
-    .board-member {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .board-member h5 {
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .board-member p {
-      font-style: italic;
-      color: #ccc;
-    }
-
-    /* Gallery: Uniform grid layout */
-    #gallery .row {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    #gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
-
-    #gallery img:hover {
-      transform: scale(1.05);
+    .nav-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="img/logo.jpg" height="40" class="me-2">
-      Uganda Squash Rackets Association
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
-        <li class="nav-item"><a class="nav-link" href="news.html">Programs, News and Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="athletes.html">Athletes</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>        
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-  <!-- Welcome -->
-  <header class="text-center py-5">
     <div class="container">
-      <h1 class="display-4 fw-bold">Programs, News and Events</h1>
-      
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.jpg" alt="Logo">
+        Uganda Squash Rackets Association
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">Programs, News and Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="athletes.html">Athletes</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>        
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
+  <!-- Content -->
+  <div class="content">
+    <!-- Welcome -->
+    <header class="text-center py-5">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Programs, News and Events</h1>
+        
+      </div>
+    </header>
+  </div>
 
+  <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
       <p>&copy; 2025 Uganda Squash Rackets Association. All rights reserved.</p>
@@ -153,4 +99,4 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-                                      </html>
+</html>
