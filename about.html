@@ -1,137 +1,188 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uganda Squash Rackets Association - About</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 80, 0.7)), url('img/18.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      overflow-x: hidden;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uganda Squash Rackets Association</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 80, 0.7)), url('img/18.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
 
-    .navbar {
-      background-color: rgba(0, 0, 80, 0.9);
-    }
+    .navbar {
+      background-color: rgba(0, 0, 80, 0.9);
+    }
 
-    .navbar-brand img {
-      height: 50px;
-      margin-right: 10px;
-    }
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+      margin-right: 10px;
+    }
 
-    .footer {
-      background-color: rgba(0, 0, 50, 0.9);
-      padding: 10px 0;
-      color: #ddd;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+    .footer {
+      background-color: rgba(0, 0, 50, 0.9);
+      padding: 20px 0;
+      color: #ddd;
+    }
 
-    section {
-      padding: 40px 15px;
-      max-width: 900px;
-      margin: auto;
-      background-color: rgba(0,0,0,0.5);
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
+    section {
+      padding: 50px 15px;
+    }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+    .icon-links a {
+      font-size: 2rem;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
 
-    p {
-      text-align: justify;
-    }
+    .icon-links a[href*="whatsapp"] {
+      color: #25D366; /* WhatsApp Green */
+    }
 
-    ul {
-      padding-left: 20px;
-    }
+    .icon-links a[href*="youtube"] {
+      color: #FF0000; /* YouTube Red */
+    }
 
-    li {
-      margin-bottom: 10px;
-    }
-  </style>
+    .icon-links a[href*="facebook"] {
+      color: #1877F2; /* Facebook Blue */
+    }
+
+    .icon-links a:hover {
+      opacity: 0.7;
+    }
+
+    /* Gallery & Board image consistency */
+    .board-member img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .board-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .board-member h5 {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .board-member p {
+      font-style: italic;
+      color: #ccc;
+    }
+
+    /* Gallery: Uniform grid layout */
+    #gallery .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    #gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    #gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="img/logo.jpg" alt="Logo">
-      Uganda Squash Rackets Association
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
-        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
-        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="athletes.html">Athletes</a></li>
-        <li class="nav-item"><a class="nav-link" href="governance.html">Governance</a></li>
-        <li class="nav-item"><a class="nav-link" href="policies.html">Policies</a></li>
-        <li class="nav-item"><a class="nav-link" href="affiliations.html">Affiliations</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/logo.jpg" height="40" class="me-2">
+      Uganda Squash Rackets Association
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">Programs, News and Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="athletes.html">Athletes</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>        
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<!-- Sticky Footer at the top -->
-<div class="footer">
-  <p>&copy; 2025 Uganda Squash Rackets Association. All rights reserved.</p>
-</div>
 
-<!-- About -->
-<section>
-  <h2>About Us</h2>
-  <p>The Uganda Squash Rackets Association (USRA) is dedicated to the growth and development of squash across Uganda. We support athletes, host tournaments, and offer youth engagement programs that spread the love of the sport nationwide.</p>
+  <!-- Welcome -->
+  <header class="text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to Uganda Squash Rackets Association</h1>
+      <p class="lead">Promoting Squash Sport Across Uganda</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="bg-dark bg-opacity-50 rounded">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p>The Uganda Squash Rackets Association (USRA) is dedicated to the growth and development of squash across Uganda. We support athletes, host tournaments, and offer youth engagement programs that spread the love of the sport nationwide.</p>
+    </div>
+  </section>
+   <section id="mission" class="bg-dark bg-opacity-50 rounded">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Mission</h2>
+    <p>To inspire participation in the sport, enhance player performance, and cultivate a lifelong 
+passion for the sport, contributing to the health and wellbeing of society.
+</p>
+  </div>
 </section>
+  <section id="mission" class="bg-dark bg-opacity-50 rounded">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Vision</h2>
+    <p>To be leading force in making Squash a widely recognized and accessible sport throughout the 
+republic of Uganda. We aim to create a dynamic and inclusive environment wherein the sport thrives at
+both grassroots and professional levels.
+</p>
+  </div>
+  </section>
+  <section id="mission" class="bg-dark bg-opacity-50 rounded">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Slogan</h2>
+    <p>OWN THE COURT  MASTER THE GAME</p>
+  </div>
+  </section>
 
-<!-- Mission -->
-<section>
-  <h2>Our Mission</h2>
-  <p>To inspire participation in the sport, enhance player performance, and cultivate a lifelong passion for the sport, contributing to the health and wellbeing of society.</p>
-</section>
 
-<!-- Vision -->
-<section>
-  <h2>Our Vision</h2>
-  <p>To be a leading force in making Squash a widely recognized and accessible sport throughout the Republic of Uganda. We aim to create a dynamic and inclusive environment wherein the sport thrives at both grassroots and professional levels.</p>
-</section>
 
-<!-- Slogan -->
-<section>
-  <h2>Our Slogan</h2>
-  <p class="text-center fw-bold">OWN THE COURT &nbsp; | &nbsp; MASTER THE GAME</p>
-</section>
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 Uganda Squash Rackets Association. All rights reserved.</p>
+    </div>
+  </footer>
 
-<!-- Programs -->
-<section>
-  <h2>Our Programs</h2>
-  <ul>
-    <li><strong>Youth Development:</strong> Training and mentoring young athletes to excel in squash.</li>
-    <li><strong>Competitive Tournaments:</strong> Hosting national and regional championships.</li>
-    <li><strong>Community Outreach:</strong> Promoting squash in schools and local communities.</li>
-    <li><strong>Coaching Clinics:</strong> Providing professional coaching and workshops.</li>
-  </ul>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+                                      </html>
